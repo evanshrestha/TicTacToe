@@ -61,7 +61,7 @@ public class Frame extends JFrame {
 			if (!draw)
 				g.drawString(s + " wins!", 150, 325);
 			else
-				g.drawString("Draw!", 150, 325);
+				g.drawString("Draw!", 175, 325);
 		}
 	}
 
@@ -144,11 +144,11 @@ public class Frame extends JFrame {
 				if (board[x][y] == 0 && playing) {
 					return;
 				}
-				draw = true;
-				playing = false;
-				FRAME.repaint();
 			}
 		}
+		draw = true;
+		playing = false;
+		FRAME.repaint();
 
 	}
 }
